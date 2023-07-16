@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-content{
+    background-color:#191816;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-logo{
+    position: fixed;
+    left: 25px;
+    top:25px
+}
+
+.main-form{
+    background-color: #24221f;
+    margin-top:70px;
+    padding:40px 120px 40px 120px
+}
+
+.main-form-title{
+    display: flex;
+    align-items: center;
+}
+
+.main-form-subtitle{
+    font-size: 14px;
+    color:#afb6c2;
+}
+
+.main-form-login{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+.main-form-email, .main-form-password{
+    display: flex;
+    align-items: center;
+    border: 3px solid #ffc632;
+    border-radius: 7px;
+    padding: 7px 10px;
+}
+
+.main-form-password{
+    border: 3px solid #afb6c2;
+}
+
+.main-form-password:active{
+    border: 3px solid #ffc632;
+}
+
+.main-form-box{
+    margin-bottom: 15px;
+}
+
+.main-form-box img{
+    cursor: pointer;
+}
+
+.main-form-box.check{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-form-check input{
+   margin-left: 10px;
+   background-color: #24221f;
+   border: 1px solid #afb6c2;
+}
+
+.main-form-check .password-forgot a{
+    color:#ffc632;
+    text-decoration: none;
+    font-size:13px;
+    margin-left: 50px
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    color:#afb6c2;
+    font-size: 14px;
+}
+
+.main-form-box a, .main-form-check-box a{
+    font-size:13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffc632;
+}
+
+.main-form-img{
+    margin-top: 5px;
+}
+
+.main-form-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 10px;
+    color:#fff;
+}
+
+.main-form-check-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -17px;
+}
+
+.main-form-box .remember{
+    font-size: 13px;
+}
+
+.main-form-check-box label{
+    margin-left: -10px;
+    margin-right: 25px;
+}
+
+.main-form-box.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+.main-form-box.button button{
+    cursor: pointer;
+}
+
+.main-form-acess{
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    border-radius: 7px;
+    background-color: #ffc632;
+    color:#24221f;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.main-form-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-account-create{
+    color: #ffc632;
+    font-size: 13px;
+}
+
+.main-account-create a, .password--recovery{
+    font-weight: 600;
+    text-decoration: none;
+    color:#ffc632;
+}
+
+.main-bg{
+    background-image: url(../images/side-image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width:1100px){
+    .main-form{
+        padding:40px 60px;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .main-content{
+        grid-column: 1/3;
+    }
+
+    .main-bg{
+        grid-column: 3/4;
+        background-position: 5%;
+    }
+
+    .main-form{
+        background-color: #24221f;
+        margin-top:70px;
+        padding:40px 60px 40px 60px
+    }
+}
+
+@media(max-width:426px){
+    .container{
+        display: grid;
+        grid-template-columns: (2,fr);
+    }
+
+    .main-content{
+        display: block;
+        grid-column: 1/4;
+    }
+
+    .main-form{
+        background-color:#191816;
+        margin-top: 100px;
+        padding: 0px 0px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .main-form-check-box{
+        margin-left: -22px;
+    }
+
+    .main-form-check-box label{
+        margin-left: -15px;
+        margin-right: 60px;
+    }
+
+}
+
+@media(max-width:376px){
+    .main-form{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .main-form-check-box{
+        margin-left: -11px;
+    }
+
+    .main-form-check-box label{
+        margin-left: 0px;
+        margin-right: 60px;
+    }
+}
+
+@media(max-width:320px){
+    .main-form{
+      margin-right:20px;
+      margin-left: 20px;  
+    }
+
+    .main-form-subtitle{
+        font-size: 13px;
+    }
+
+    .main-form-check-box{
+        margin-left: -16px;
+    }
+
+    .main-form-box label{
+        font-size: 13px;
+    }
+
+    .main-form-check-box label{
+        margin-left: -10px;
+        margin-right: 17px;
+        font-size: 12px;
+    }
+
+    .main-form-check-box a{
+        font-size: 12px;
+    }
+        
+}
